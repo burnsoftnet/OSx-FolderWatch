@@ -89,4 +89,9 @@
     [myresults setValue:anObject forKey:columnIdentifier];
 }
 
+- (IBAction)btnClearTable:(id)sender {
+    [myresults removeAllObjects];
+    [_myTableView reloadData];
+    
+}
 @end
