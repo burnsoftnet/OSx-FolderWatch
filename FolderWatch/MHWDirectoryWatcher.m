@@ -90,7 +90,7 @@ typedef void (^MHWDirectoryWatcherCallback)(void);
         return NO;
     }
     
-    void (^cleanup)() = ^{
+    void (^cleanup)(void) = ^{
         close(fd);
     };
     
