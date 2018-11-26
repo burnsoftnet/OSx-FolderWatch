@@ -94,4 +94,10 @@
     [_myTableView reloadData];
     
 }
+
+- (IBAction)btnShowInFinder:(id)sender {
+    NSURL *fileURL = [NSURL fileURLWithPath: self.txtPath.stringValue];
+    NSArray *fileURLs = [NSArray arrayWithObjects:fileURL, /* ... */ nil];
+    [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:fileURLs];
+}
 @end

@@ -23,6 +23,7 @@
 @property (weak) IBOutlet NSScrollView *scrollView;
 @property (weak) IBOutlet NSTableView *myTableView;
 - (IBAction)btnClearTable:(id)sender;
+- (IBAction)btnShowInFinder:(id)sender;
 
 
 @end
