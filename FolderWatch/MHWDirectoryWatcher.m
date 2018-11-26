@@ -58,7 +58,7 @@ typedef void (^MHWDirectoryWatcherCallback)(void);
 }
 
 + (MHWDirectoryWatcher *)directoryWatcherAtPath:(NSString *)watchPath
-                                       callback:(void(^)())cb
+                                       callback:(void(^)(void))cb
 {
     return [MHWDirectoryWatcher directoryWatcherAtPath:watchPath
                                       startImmediately:YES
