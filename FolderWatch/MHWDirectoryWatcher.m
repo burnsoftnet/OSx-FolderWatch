@@ -42,7 +42,7 @@ typedef void (^MHWDirectoryWatcherCallback)(void);
 
 + (MHWDirectoryWatcher *)directoryWatcherAtPath:(NSString *)watchedPath
                                startImmediately:(BOOL)startImmediately
-                                       callback:(void(^)())cb
+                                       callback:(void(^)(void))cb
 {
     NSAssert(watchedPath != nil, @"The directory to watch must not be nil");
     MHWDirectoryWatcher *directoryWatcher = [[MHWDirectoryWatcher alloc] initWithPath:watchedPath];
